@@ -1,0 +1,13 @@
+{
+  "version": 4,
+  "date": "2026-10-15",
+  "tool": "Built-in image_gen",
+  "file": "assets/ui/wordmark.webp",
+  "source": "C:/Users/ccjji/.codex/generated_images/01a13bb3-0355-73a1-bc00-83154d567712/exec-e554ae07-4506-409f-95ec-50908f1eb964.png",
+  "prompt": "Create one exquisite Korean fantasy visual novel title wordmark as a production PNG with TRUE TRANSPARENT BACKGROUND, no background scene. Exact Korean text only: '골목 시술소'. Arrange in two balanced lines, '골목' above '시술소', the lower line slightly wider. Elegant custom Korean serif calligraphy inspired by fine book covers, slim expressive brush endings, warm ivory lettering with restrained antique champagne-gold ink edging, sophisticated and legible, NOT chunky bold sans-serif, NOT neon, NOT pixel art, NOT glossy game logo. Very delicate hand-engraved botanical stems and a few small gold leaves grow organically from the lettering ends, with one tiny alchemy droplet tucked below the title. Ornamental details are sparse, airy and finely drawn, leaving plenty of negative space. No rectangular frame, no plate, no plaque, no bounding outline, no shadows outside the artwork, no Latin text, no subtitle, no border. Artwork occupies the center 85% width and 85% height of a landscape 3:2 canvas. Premium romantic medieval fantasy art direction, calm and mature. Actual alpha transparency around and between all lettering and foliage.",
+  "size": [
+    1536,
+    1024
+  ],
+  "format": "RGBA WebP, original dimensions, alpha preserved"
+}
