@@ -28,7 +28,7 @@
     const open=!$('.treatment-room').classList.contains('curtains-open');
     $('.treatment-room').classList.toggle('curtains-open',open);
     ev.currentTarget.setAttribute('aria-expanded',String(open));
-    ev.currentTarget.textContent=open?'커튼 닫기 ↙':'커튼 걷어 보기 ↗';
+    ev.currentTarget.textContent=open?'커튼 닫기':'커튼 열기';
     $('.curtain-destination').hidden=!open;sfx('door');
   });
   const lightbox=$('#art-lightbox');
@@ -38,7 +38,7 @@
     lightbox.showModal();
   }
   $$('[data-portrait]').forEach(root=>{
-    const zoom=document.createElement('button');zoom.className='zoom-art';zoom.textContent='⤢';
+    const zoom=document.createElement('button');zoom.className='zoom-art';zoom.innerHTML='<svg class="control-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg>';
     zoom.setAttribute('aria-label','그림 크게 보기');zoom.addEventListener('click',()=>zoomPortrait(root));root.append(zoom);
     let touch,swiped=false;
     root.addEventListener('click',ev=>{if(ev.target.tagName==='IMG'&&!swiped)zoomPortrait(root);});
@@ -58,8 +58,8 @@
     const dest=new URL(a.href,location.href);
     if(dest.origin!==location.origin||dest.hash||!dest.pathname.endsWith('.html'))return;
     if(reduced.matches)return;
-    ev.preventDefault();document.body.classList.add('leaving');
-    setTimeout(()=>location.href=a.href,280);
+    ev.preventDefault();const label=$('.transition-label');if(label)label.textContent=a.textContent.replace(/\s+/g,' ').trim();document.body.classList.add('leaving');
+    setTimeout(()=>location.href=a.href,720);
   });
   window.addEventListener('pageshow',()=>document.body.classList.remove('leaving','entering'));
   // Restrained parallax; disabled for touch and motion-sensitive visitors.

@@ -15,12 +15,16 @@ python3 -m http.server 8766
 
 - `_build/data.py`: 작품 문구, 인물, 메뉴, 장소, 감정 코드 범위, 파일 경로, 링크 설정
 - `_build/build.py`: 카르테·개업 페이지와 정적 사이트 빌드.
-- `_build/immersive.py`: V2 공용 셸, 입구, 접수대, 대기실, 조향실, 시술실, 도시.
-- `_build/core.js` + `_build/interactions.js`: JS 원본. 빌드 시 `assets/site.js`로 합칩니다.
+- `_build/immersive.py`: V3 공용 셸, 입구, 접수대, 대기실, 조향실, 시술실, 도시.
+- `_build/core.js` + `_build/interactions.js` + `_build/motion.js`: JS 원본. 빌드 시 `assets/site.js`로 합칩니다.
 - `assets/site.css`: V2 반응형 레이아웃, 숲빛 바탕, 크림색 종이, 공간 핫스폿, 커튼과 모달.
+- `assets/game-ui.css`: V3 버튼, 인물 선택, UI 아이콘, 모션, 모바일 선택 도크.
+- `assets/ui`: 생성한 아이콘 아틀라스와 버튼 상태 아틀라스. 원본 크기 1536×1024, 투명 WebP.
+- `assets/fonts/pretendard`: 로컬 Pretendard Variable 서브셋. 굵기 45~920.
+- `qa/v3-report.json`: V3 브라우저 검수 기록.
 - `assets/site.js`: 생성 결과. 직접 수정하지 않습니다.
 - `assets/art`: 새로 생성한 골목, 접수대, 조향실, 고지도 WebP 4장.
-- `design`: Figma용 편집 가능 SVG 4종, 생성 스크립트와 작업 상태.
+- `design`: V2 Figma용 SVG 4종과 V3 UI 에셋 생성 프롬프트/출처. Figma 파일은 V3 동기화되지 않았습니다.
 - `assets/guard.js`: 성인 확인 전 하위 페이지 진입 시 입구로 이동
 - `assets/fonts`: 자체 호스팅 WOFF2 네 가족 및 각각의 라이선스
 - `images/CS`: 인물 455장. 첫등장 5장 + 인물별 90장

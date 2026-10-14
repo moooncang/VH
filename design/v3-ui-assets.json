@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "date": "2026-10-15",
+  "reference": "https://github.com/moooncang/II",
+  "assets": [
+    {
+      "file": "assets/ui/inventory-atlas.webp",
+      "prompt": "Production-ready game UI icon sprite atlas on a truly transparent background. EXACT layout: 3 equal columns by 2 equal rows, six separate icons, each perfectly centered in its own equal rectangular cell, generous equal transparent padding, no overlap, no text. Canvas landscape 3:2 ratio. Top row left: a closed dark green leather ledger with brass corner protectors, visible paper edges, bookmark. Top row middle: a small ornate oval portrait frame with a simple anonymous painted silhouette inside, antique brass and dark wood. Top row right: a beautiful green glass alchemist's perfume bottle with brass stopper and tiny leaf ornament. Bottom row left: parted deep green theater curtains held by brass tiebacks, a warm amber slit between them. Bottom row middle: a miniature medieval stone city gate with green rooftops. Bottom row right: an antique brass key resting diagonally across a small dark leather tag. Visual style: high-quality hand-painted fantasy RPG inventory icons, tactile worn materials, selective bright edge lighting, strong readable silhouette, finely shaded 3D painterly objects, medium detail readable at 64 pixels, dark forest green, warm antique brass, aged cream accents. Consistent viewpoint and lighting. NOT flat outline symbols, NOT emojis, NOT app logos, NOT badges with circular backgrounds. No ground plane, no cast shadow outside object, no square backgrounds, no labels, no watermarks, no UI screen, no scene background. Each icon is an isolated inventory item. Clean true alpha transparency around every icon.",
+      "source": "exec-397b499e-e0cd-4bce-9bcc-b6bf6e9d4301.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha": true
+    },
+    {
+      "file": "assets/ui/command-plates.webp",
+      "prompt": "Two matching hand-painted fantasy RPG button background plates, on a true transparent background, no text, no symbols, no icons. Sprite sheet layout: ONE column TWO equal rows, exactly aligned centered plates, each plate occupies 92 percent of its row width and 65 percent of its row height. Overall image landscape 3:2 ratio. Every plate is a broad horizontal shape approximately 4.5:1 width to height. Same shape both rows: dark forest green leather inset, thin rich antique brass beveled frame, clipped angular corners, modest elegant leaf engraving ONLY at the two ends, tiny brass rivets, subtly worn tactile craftsmanship. Large perfectly empty flat dark green central area for a readable live text label. Top plate idle: deep green with restrained metal highlight. Bottom plate selected: same design and silhouette, more luminous amber metal edge and warm center. Game interface asset with sharp clean silhouette, fine 2D painterly shading, high-end fantasy inventory UI. NOT huge elaborate rococo ornament, NOT stone, NOT a scene, NOT a full screenshot, NOT text or lettering. Clean alpha around plates and between rows, no outer glow, no background.",
+      "source": "exec-19107996-2a2d-4539-aa3f-0d05834e271c.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "alpha": true
+    }
+  ],
+  "note": "Original generated PNGs converted to WebP without resizing; CSS atlas coordinates are used for UI states."
+}

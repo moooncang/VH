@@ -1,0 +1,243 @@
+{
+  "version": 3,
+  "date": "2026-10-15",
+  "browser": "Codex in-app browser",
+  "desktop": [
+    {
+      "broken": [],
+      "path": "/index.html",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/home.html",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/characters.html",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/rules.html",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/treatment.html",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/city.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/start.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/char/reina.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/char/ner.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/char/serpina.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/char/ivrea.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    },
+    {
+      "broken": [],
+      "path": "/char/kasha.html",
+      "scrollWidth": 1425,
+      "width": 1440
+    }
+  ],
+  "mobile": [
+    {
+      "broken": [],
+      "h1": "접수대",
+      "path": "/home.html",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "대기실",
+      "path": "/characters.html",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "조향실",
+      "path": "/rules.html",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "시술실",
+      "path": "/treatment.html",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "베일하운",
+      "path": "/city.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "장부의 첫 장",
+      "path": "/start.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "레이나",
+      "path": "/char/reina.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "네르",
+      "path": "/char/ner.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "세르피나",
+      "path": "/char/serpina.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "이브레아",
+      "path": "/char/ivrea.html",
+      "scrollWidth": 375,
+      "width": 390
+    },
+    {
+      "broken": [],
+      "h1": "카샤",
+      "path": "/char/kasha.html",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  ],
+  "additionalWidths": [
+    {
+      "path": "/characters.html",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/home.html",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/rules.html",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/start.html",
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "path": "/characters.html",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/home.html",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/rules.html",
+      "scrollWidth": 768,
+      "width": 768
+    },
+    {
+      "path": "/start.html",
+      "scrollWidth": 753,
+      "width": 768
+    },
+    {
+      "path": "/characters.html",
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/home.html",
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/rules.html",
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    {
+      "path": "/start.html",
+      "scrollWidth": 1009,
+      "width": 1024
+    }
+  ],
+  "checks": {
+    "entryNavigation": true,
+    "characterSelection": true,
+    "characterFilter": true,
+    "filteredNext": true,
+    "mobileRoster": true,
+    "portraitZoomAndEscape": true,
+    "expressionAndVariant": true,
+    "oilSelection": true,
+    "notebookPages": true,
+    "curtainToggle": true,
+    "cityPinSelection": true,
+    "roomMenuAndEscape": true,
+    "receptionMenu": true,
+    "partitionDialogue": true,
+    "computedFont": "Pretendard Variable 900",
+    "computedEdgeAnimation": "edge-travel"
+  },
+  "console": [],
+  "limitations": [
+    "Motion reduction was inspected in CSS/JS; OS preference was not changed during this run.",
+    "Screenshots saved locally in qa/v3, not included in Git."
+  ]
+}
