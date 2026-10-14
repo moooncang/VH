@@ -1,0 +1,591 @@
+{
+  "version": 2,
+  "date": "2026-10-15",
+  "passed": true,
+  "browser": "Codex in-app browser via CUA",
+  "pages": [
+    {
+      "viewport": "desktop",
+      "page": "index",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 7
+    },
+    {
+      "viewport": "desktop",
+      "page": "home",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 7
+    },
+    {
+      "viewport": "desktop",
+      "page": "characters",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 7
+    },
+    {
+      "viewport": "desktop",
+      "page": "rules",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 7
+    },
+    {
+      "viewport": "desktop",
+      "page": "treatment",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 7
+    },
+    {
+      "viewport": "desktop",
+      "page": "city",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 6
+    },
+    {
+      "viewport": "desktop",
+      "page": "start",
+      "broken": [],
+      "dialogs": 0,
+      "h1": 1,
+      "overflow": false,
+      "width": 1440,
+      "unrequestedHiddenImages": 6
+    },
+    {
+      "viewport": "desktop",
+      "page": "char/reina",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "viewport": "desktop",
+      "page": "char/ner",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "viewport": "desktop",
+      "page": "char/serpina",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "viewport": "desktop",
+      "page": "char/ivrea",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "viewport": "desktop",
+      "page": "char/kasha",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 1440
+    },
+    {
+      "viewport": "mobile",
+      "page": "index",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "home",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "characters",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "rules",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "treatment",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "city",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "start",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "char/reina",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "char/ner",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "char/serpina",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "char/ivrea",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "viewport": "mobile",
+      "page": "char/kasha",
+      "broken": [],
+      "h1": 1,
+      "overflow": false,
+      "width": 390
+    }
+  ],
+  "extraViewports": [
+    {
+      "width": 320,
+      "page": "home",
+      "overflow": false,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "page": "characters",
+      "overflow": false,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "page": "city",
+      "overflow": false,
+      "scroll": 320
+    },
+    {
+      "width": 768,
+      "page": "home",
+      "overflow": false,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "page": "characters",
+      "overflow": false,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "page": "city",
+      "overflow": false,
+      "scroll": 753
+    },
+    {
+      "width": 1024,
+      "page": "home",
+      "overflow": false,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "page": "characters",
+      "overflow": false,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "page": "city",
+      "overflow": false,
+      "scroll": 1009
+    }
+  ],
+  "galleryGroups": [
+    {
+      "person": "reina",
+      "emotion": 1,
+      "src": "../images/CS/AP.webp",
+      "variants": 0
+    },
+    {
+      "person": "reina",
+      "emotion": 2,
+      "src": "../images/CS/A_8.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 3,
+      "src": "../images/CS/A_18.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 4,
+      "src": "../images/CS/A_22.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 5,
+      "src": "../images/CS/A_39.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 6,
+      "src": "../images/CS/A_42.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 7,
+      "src": "../images/CS/A_58.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 8,
+      "src": "../images/CS/A_61.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 9,
+      "src": "../images/CS/A_73.webp",
+      "variants": 10
+    },
+    {
+      "person": "reina",
+      "emotion": 10,
+      "src": "../images/CS/A_85.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 1,
+      "src": "../images/CS/BP.webp",
+      "variants": 0
+    },
+    {
+      "person": "ner",
+      "emotion": 2,
+      "src": "../images/CS/B_1.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 3,
+      "src": "../images/CS/B_10.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 4,
+      "src": "../images/CS/B_23.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 5,
+      "src": "../images/CS/B_32.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 6,
+      "src": "../images/CS/B_47.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 7,
+      "src": "../images/CS/B_50.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 8,
+      "src": "../images/CS/B_63.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 9,
+      "src": "../images/CS/B_76.webp",
+      "variants": 10
+    },
+    {
+      "person": "ner",
+      "emotion": 10,
+      "src": "../images/CS/B_86.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 1,
+      "src": "../images/CS/CP.webp",
+      "variants": 0
+    },
+    {
+      "person": "serpina",
+      "emotion": 2,
+      "src": "../images/CS/C_8.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 3,
+      "src": "../images/CS/C_17.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 4,
+      "src": "../images/CS/C_25.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 5,
+      "src": "../images/CS/C_31.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 6,
+      "src": "../images/CS/C_45.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 7,
+      "src": "../images/CS/C_58.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 8,
+      "src": "../images/CS/C_69.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 9,
+      "src": "../images/CS/C_72.webp",
+      "variants": 10
+    },
+    {
+      "person": "serpina",
+      "emotion": 10,
+      "src": "../images/CS/C_87.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 1,
+      "src": "../images/CS/DP.webp",
+      "variants": 0
+    },
+    {
+      "person": "ivrea",
+      "emotion": 2,
+      "src": "../images/CS/D_2.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 3,
+      "src": "../images/CS/D_10.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 4,
+      "src": "../images/CS/D_29.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 5,
+      "src": "../images/CS/D_32.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 6,
+      "src": "../images/CS/D_48.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 7,
+      "src": "../images/CS/D_52.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 8,
+      "src": "../images/CS/D_64.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 9,
+      "src": "../images/CS/D_72.webp",
+      "variants": 10
+    },
+    {
+      "person": "ivrea",
+      "emotion": 10,
+      "src": "../images/CS/D_80.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 1,
+      "src": "../images/CS/EP.webp",
+      "variants": 0
+    },
+    {
+      "person": "kasha",
+      "emotion": 2,
+      "src": "../images/CS/E_1.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 3,
+      "src": "../images/CS/E_18.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 4,
+      "src": "../images/CS/E_26.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 5,
+      "src": "../images/CS/E_36.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 6,
+      "src": "../images/CS/E_45.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 7,
+      "src": "../images/CS/E_52.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 8,
+      "src": "../images/CS/E_66.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 9,
+      "src": "../images/CS/E_70.webp",
+      "variants": 10
+    },
+    {
+      "person": "kasha",
+      "emotion": 10,
+      "src": "../images/CS/E_83.webp",
+      "variants": 10
+    }
+  ],
+  "checks": [
+    "Fresh tab redirects protected character page to entry",
+    "Adult entry transition to reception",
+    "Ledger sheet opens and closes",
+    "Curtain dialogue changes",
+    "Person selection and named zoom button work",
+    "All 50 emotion groups map to the supplied files",
+    "Variant next arrow changes image",
+    "Oil selection updates effect",
+    "Notebook page and heat controls update",
+    "Escape closes active sheet without opening directory",
+    "City pins update place and image",
+    "Treatment curtain opens and closes",
+    "Night treatment uses N.webp",
+    "Free-start form copies entered state",
+    "Directory thumbnails load",
+    "320/390/768/1024/1440 width checks"
+  ],
+  "consoleErrors": []
+}

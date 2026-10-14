@@ -1,0 +1,26 @@
+{
+  "modelTool": "image_gen.imagegen",
+  "format": "WebP quality 90; generated PNG originals retained outside repo",
+  "assets": [
+    {
+      "file": "alley.webp",
+      "source": "exec-b4c52022-fd4e-4741-a346-3fb08176342c.png",
+      "brief": "비 내리는 중세 골목, 오른쪽 따뜻한 시술소 문, 왼쪽 제목 여백. 짙은 청록과 황동빛, 사람·문자·UI 없음."
+    },
+    {
+      "file": "reception.webp",
+      "source": "exec-89ab9a86-42d1-4acc-bb7b-e0780f19d2f0.png",
+      "brief": "판타지 약제상 접수대. 왼쪽 창, 중앙 커튼, 오른쪽 장부와 황동 종, 숲빛 목재와 호박색 빛. 기존 R.png 분위기 참고."
+    },
+    {
+      "file": "perfumery.webp",
+      "source": "exec-31f63f01-0909-40db-b2f9-cc76c352b9ec.png",
+      "brief": "밤의 조향실, 호박색·초록색 큰 병과 작은 어두운 병, 약초·노트·증류기, 오른쪽 비 오는 창. 인물·문자·UI 없음."
+    },
+    {
+      "file": "atlas.webp",
+      "source": "exec-a2f3461b-4ba0-4df3-86a6-f6217bf56a11.png",
+      "brief": "낡은 양피지와 녹색 잉크의 판타지 자유교역도시 조감도. 성문·중앙 광장·첨탑·주둔지·운하·심연 입구를 표현하는 탐색용 개념도. 인물·문자·UI 없음."
+    }
+  ]
+}
