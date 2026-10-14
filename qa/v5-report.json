@@ -1,0 +1,795 @@
+{
+  "version": 5,
+  "clientDate": "2026-10-15",
+  "references": [
+    "https://moooncang.github.io/II/",
+    "https://na.finalfantasyxvi.com/",
+    "https://www.expedition33.com/"
+  ],
+  "pageChecks": [
+    {
+      "brokenImages": [],
+      "h1": "골목시술소",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/home.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "레이나",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/characters.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "시술 안내",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/rules.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "베일하운",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/city.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "시술실",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/treatment.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "시작하기",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/start.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "레이나",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/reina.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "네르",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/ner.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "세르피나",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/serpina.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "이브레아",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/ivrea.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "카샤",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/kasha.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "h1": "골목시술소",
+      "height": 900,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/index.html",
+      "timeControls": 0,
+      "width": 1440
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/home.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/characters.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/rules.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/city.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/treatment.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/start.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/reina.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/ner.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/serpina.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/ivrea.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/char/kasha.html",
+      "timeControls": 0,
+      "width": 390
+    },
+    {
+      "brokenImages": [],
+      "height": 844,
+      "oldStyles": 0,
+      "overflow": false,
+      "page": "/index.html",
+      "timeControls": 0,
+      "width": 390
+    }
+  ],
+  "additionalSizes": [
+    {
+      "overflow": false,
+      "path": "/index.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/home.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/characters.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/rules.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/city.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/start.html",
+      "size": [
+        320,
+        740
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/index.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/home.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/characters.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/rules.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/city.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/start.html",
+      "size": [
+        768,
+        1024
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/index.html",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/home.html",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/characters.html",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/rules.html",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/city.html",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "overflow": false,
+      "path": "/start.html",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "castSelections": [
+    {
+      "link": "char/reina.html",
+      "name": "레이나",
+      "overflow": false,
+      "selected": 1,
+      "type": "cast"
+    },
+    {
+      "link": "char/ner.html",
+      "name": "네르",
+      "overflow": false,
+      "selected": 1,
+      "type": "cast"
+    },
+    {
+      "link": "char/serpina.html",
+      "name": "세르피나",
+      "overflow": false,
+      "selected": 1,
+      "type": "cast"
+    },
+    {
+      "link": "char/ivrea.html",
+      "name": "이브레아",
+      "overflow": false,
+      "selected": 1,
+      "type": "cast"
+    },
+    {
+      "link": "char/kasha.html",
+      "name": "카샤",
+      "overflow": false,
+      "selected": 1,
+      "type": "cast"
+    }
+  ],
+  "expressionGroups": [
+    {
+      "expression": "첫등장",
+      "page": "/char/reina.html",
+      "src": "../images/CS/AP.webp",
+      "title": "첫등장 · 1 / 1",
+      "variants": 0
+    },
+    {
+      "expression": "평소",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_0.webp",
+      "title": "평소 · 1 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "기쁨",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_15.webp",
+      "title": "기쁨 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "슬픔",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_23.webp",
+      "title": "슬픔 · 4 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "당황",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_31.webp",
+      "title": "당황 · 2 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "부끄러움",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_43.webp",
+      "title": "부끄러움 · 4 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "분노",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_55.webp",
+      "title": "분노 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "유혹",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_62.webp",
+      "title": "유혹 · 3 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "달아오름",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_79.webp",
+      "title": "달아오름 · 10 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "시술",
+      "page": "/char/reina.html",
+      "src": "../images/CS/A_83.webp",
+      "title": "시술 · 4 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "첫등장",
+      "page": "/char/ner.html",
+      "src": "../images/CS/BP.webp",
+      "title": "첫등장 · 1 / 1",
+      "variants": 0
+    },
+    {
+      "expression": "평소",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_4.webp",
+      "title": "평소 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "기쁨",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_12.webp",
+      "title": "기쁨 · 3 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "슬픔",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_24.webp",
+      "title": "슬픔 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "당황",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_35.webp",
+      "title": "당황 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "부끄러움",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_42.webp",
+      "title": "부끄러움 · 3 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "분노",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_57.webp",
+      "title": "분노 · 8 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "유혹",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_68.webp",
+      "title": "유혹 · 9 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "달아오름",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_74.webp",
+      "title": "달아오름 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "시술",
+      "page": "/char/ner.html",
+      "src": "../images/CS/B_87.webp",
+      "title": "시술 · 8 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "첫등장",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/CP.webp",
+      "title": "첫등장 · 1 / 1",
+      "variants": 0
+    },
+    {
+      "expression": "평소",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_1.webp",
+      "title": "평소 · 2 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "기쁨",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_14.webp",
+      "title": "기쁨 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "슬픔",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_29.webp",
+      "title": "슬픔 · 10 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "당황",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_34.webp",
+      "title": "당황 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "부끄러움",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_45.webp",
+      "title": "부끄러움 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "분노",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_58.webp",
+      "title": "분노 · 9 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "유혹",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_65.webp",
+      "title": "유혹 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "달아오름",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_74.webp",
+      "title": "달아오름 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "시술",
+      "page": "/char/serpina.html",
+      "src": "../images/CS/C_81.webp",
+      "title": "시술 · 2 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "첫등장",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/DP.webp",
+      "title": "첫등장 · 1 / 1",
+      "variants": 0
+    },
+    {
+      "expression": "평소",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_6.webp",
+      "title": "평소 · 7 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "기쁨",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_11.webp",
+      "title": "기쁨 · 2 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "슬픔",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_24.webp",
+      "title": "슬픔 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "당황",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_35.webp",
+      "title": "당황 · 6 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "부끄러움",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_48.webp",
+      "title": "부끄러움 · 9 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "분노",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_56.webp",
+      "title": "분노 · 7 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "유혹",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_60.webp",
+      "title": "유혹 · 1 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "달아오름",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_71.webp",
+      "title": "달아오름 · 2 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "시술",
+      "page": "/char/ivrea.html",
+      "src": "../images/CS/D_87.webp",
+      "title": "시술 · 8 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "첫등장",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/EP.webp",
+      "title": "첫등장 · 1 / 1",
+      "variants": 0
+    },
+    {
+      "expression": "평소",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_4.webp",
+      "title": "평소 · 5 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "기쁨",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_10.webp",
+      "title": "기쁨 · 1 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "슬픔",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_29.webp",
+      "title": "슬픔 · 10 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "당황",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_39.webp",
+      "title": "당황 · 10 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "부끄러움",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_46.webp",
+      "title": "부끄러움 · 7 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "분노",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_58.webp",
+      "title": "분노 · 9 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "유혹",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_63.webp",
+      "title": "유혹 · 4 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "달아오름",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_76.webp",
+      "title": "달아오름 · 7 / 10",
+      "variants": 10
+    },
+    {
+      "expression": "시술",
+      "page": "/char/kasha.html",
+      "src": "../images/CS/E_87.webp",
+      "title": "시술 · 8 / 10",
+      "variants": 10
+    }
+  ],
+  "interactions": {
+    "keyboardCastWrapping": true,
+    "keyboardDestinationPreview": true,
+    "entryNavigation": true,
+    "entryGuardRedirect": true,
+    "menuEscape": true,
+    "imageZoom": true,
+    "backKnotMap": true,
+    "heatSelection": true,
+    "unknownOil": "???",
+    "curtainToggle": true,
+    "freeModeClipboard": "복사했습니다",
+    "rumorCycling": true,
+    "timeShortcutRemoved": true
+  },
+  "consoleErrors": [],
+  "limitations": [
+    "No automation hover API; checked shared keyboard preview behavior and CSS hover rules.",
+    "Reduced motion CSS and JS were reviewed without changing OS preferences.",
+    "BGM, external story link, treatment experience link and prologue content remain unset by the author."
+  ]
+}

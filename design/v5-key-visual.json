@@ -1,0 +1,8 @@
+{
+  "version": 5,
+  "tool": "image_gen",
+  "prompt": "Create a cinematic environment key visual for a premium dark fantasy visual novel website, widescreen landscape 16:9. An intimate medieval apothecary and manual healing studio at night. Distinctly illustrated high-end anime game background painted by hand, not a photorealistic hotel render. Composition is extremely controlled: left 45 percent almost empty deep charcoal shadow, with faint muted texture and no objects so live website typography can sit there. Right half shows a single beautiful large circular antique amber stained-glass window, branching lead tracery with botanical shapes, warm light rays falling through it onto a dark green velvet chaise and an old walnut cabinet with just three glass oil bottles. Tall draped charcoal fabric to far right. A restrained crescent of warm gold light circles part of window. Camera wide, eye level, theatrical chiaroscuro, amber and muted olive only, soft painterly atmosphere, luxurious cinematic dark game key art. Spacious, no clutter, strong single focal light, high readable contrast, no people, no lettering, no text, no symbols, no logo, no frame, no border, no UI. NOT a street view, NOT symmetrical, NOT a collage, NOT busy furniture.",
+  "source": "C:/Users/ccjji/.codex/generated_images/01a13bb3-0355-73a1-bc00-83154d567712/exec-20f1db84-a79a-4828-9fe9-791d4db6b259.png",
+  "asset": "assets/art/title-v5.webp",
+  "notes": "Generated a new environment; converted format without resizing. Supplied backgrounds and character images were not edited."
+}
