@@ -203,3 +203,15 @@ for character in CHARACTERS:
 COPY['emotion']='감정 기록'
 COPY['variant']='변형'
 COPY['variant_empty']='그림 준비 중'
+
+# V6 presentation data. English display names follow the file slugs; face points are
+# percentages inside each first-appearance portrait (AP~EP) and drive every crop.
+EN_NAMES={'reina':'Reina','ner':'Ner','serpina':'Serpina','ivrea':'Ivrea','kasha':'Kasha'}
+FACES={'reina':(52,16),'ner':(75,22),'serpina':(68,30),'ivrea':(73,32),'kasha':(25,22)}
+for character in CHARACTERS:
+    character['en']=EN_NAMES[character['slug']]
+    character['face']=FACES[character['slug']]
+# Pin positions on assets/art/atlas.webp, in percent of the map.
+for place,(x,y) in zip(PLACES,[(50,36),(27,55),(74,13),(83,67),(60,51),(50,84)]):
+    place['x'],place['y']=x,y
+SHOP_PIN=(36,64)
