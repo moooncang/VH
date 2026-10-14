@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+qa/*.png
+qa/failure.json
+node_modules/
+.DS_Store
+*.zip

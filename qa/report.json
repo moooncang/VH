@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "pages": [
+    {
+      "page": "index",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "home",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "characters",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "rules",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "treatment",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "city",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "start",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/reina",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/ner",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/serpina",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/ivrea",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/kasha",
+      "width": 1440,
+      "scroll": 1440,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "index",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "home",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "characters",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "rules",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "treatment",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "city",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "start",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/reina",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/ner",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/serpina",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/ivrea",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    },
+    {
+      "page": "char/kasha",
+      "width": 390,
+      "scroll": 390,
+      "broken": [],
+      "fonts": true
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "12 pages at 1440 and 390",
+    "three time modes on every page",
+    "entry redirect",
+    "entry with storage denied",
+    "all ten emotion tabs",
+    "variant arrow navigation",
+    "Q/E character navigation",
+    "front/back knot map",
+    "staff/guest filtering",
+    "unknown bottle",
+    "city arrows",
+    "mode forms",
+    "input shortcut isolation",
+    "remembered time",
+    "bell rotation",
+    "Escape dialog"
+  ]
+}
