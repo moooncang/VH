@@ -1,0 +1,66 @@
+btn-primary-hover.png - 개별 생성으로 idle과 외곽·잎 장식의 픽셀 위치가 완전히 일치하지 않음.
+btn-primary-press.png - 개별 생성으로 idle과 외곽·잎 장식의 픽셀 위치가 완전히 일치하지 않음.
+btn-secondary-idle.png - 양끝 리벳이 요청한 각 2개 대신 각 1개로 생성됨.
+btn-secondary-hover.png - 양끝 리벳이 각 1개이며 idle과 외곽의 픽셀 위치가 완전히 일치하지 않음.
+btn-secondary-press.png - 양끝 리벳이 각 1개이며 idle과 외곽의 픽셀 위치가 완전히 일치하지 않음.
+btn-round-hover.png - 개별 생성으로 idle과 외곽·장식의 픽셀 위치가 완전히 일치하지 않음.
+btn-round-press.png - 개별 생성으로 idle과 외곽·장식의 픽셀 위치가 완전히 일치하지 않음.
+icon-arrow-right.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-arrow-left.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-arrow-down.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-close.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-zoom.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-sound-on.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-sound-off.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-menu.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-bell.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-copy.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-check.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+icon-plus.png - 요청한 크림색 선 아이콘보다 채색 면과 놋쇠 음영이 두껍게 생성됨.
+body-front.png - 인체 선화 생성이 이미지 도구에서 거절되어 목제 관절 마네킹 도해로 생성함.
+body-back.png - 정면과 맞추기 위해 인체 선화 대신 목제 관절 마네킹 후면 도해로 생성함.
+chip-idle.png - 작은 천 라벨에 문서에 없는 술과 금속 장식이 추가됨.
+chip-active.png - 작은 천 라벨에 문서에 없는 술과 금속 장식이 추가됨.
+field-idle.png - 장식이 지정된 24px 모서리 영역을 넘어가며 추가 잎·소품이 생성됨.
+field-focus.png - 장식이 지정된 24px 모서리 영역을 넘어가며 추가 잎·소품이 생성됨.
+field-area-idle.png - 장식이 지정된 24px 모서리 영역을 넘어가며 추가 잎·소품이 생성됨.
+field-area-focus.png - 장식이 지정된 24px 모서리 영역을 넘어가며 추가 잎·소품이 생성됨.
+divider.png - 끝 장식 때문에 가로 반복 시 이음매가 생김.
+chapter-medal.png - 단순한 원판 외에 꽃과 리본 장식이 추가됨.
+logo-veilhaun-large-blank.png - 필수 무문자판의 파일명이 지정되지 않아 -blank를 붙였으며 문자판에 없는 녹색 명판 바탕이 생성됨.
+logo-veilhaun-small-blank.png - 필수 무문자판의 파일명이 지정되지 않아 -blank를 붙였으며 문자판에 없는 녹색 명판 바탕이 생성됨.
+badge-blank.png - 필수 무문자판의 파일명이 지정되지 않아 이 이름으로 저장함.
+sign-blank.png - 글자 제거 외에도 간판 장식의 형태가 원본 상태와 달라짐.
+bell-ring.png - 기울기와 반짝임 외에 종의 화면 내 크기도 idle과 달라짐.
+pick-idle.png - 초상 창이 지정된 120×120 정사각형과 일치하지 않음.
+pick-active.png - 초상 창이 지정된 120×120 정사각형과 일치하지 않음.
+viewer-frame.png - 테두리가 지정된 40px보다 두껍고 안쪽 창 비율이 16:11과 정확히 일치하지 않음.
+step-locked.png - 숫자 자리인 중앙에 자물쇠 문양이 추가됨.
+step-open.png - 숫자 자리인 중앙에 자물쇠 문양이 추가됨.
+react-card.png - 어두운 나무 판 대신 중앙이 투명한 나무 액자로 생성됨.
+voice-card.png - 따옴표와 꽃 장식이 지정된 56px 모서리 영역을 넘어감.
+pager-card.png - 왼쪽 투명 초상 창이 정사각형 비율과 일치하지 않음.
+depth-surface.png - 개별 생성으로 가로 반복 및 층 사이 경계의 무늬가 픽셀 단위로 이어지지 않음.
+depth-vessel.png - 개별 생성으로 가로 반복 및 층 사이 경계의 무늬가 픽셀 단위로 이어지지 않음.
+depth-core.png - 개별 생성으로 가로 반복 및 층 사이 경계의 무늬가 픽셀 단위로 이어지지 않음.
+curtain-right.png - 별도 생성으로 왼쪽 커튼과 픽셀 단위의 정확한 좌우 대칭이 아님.
+curtain-open-left.png - 닫힌 커튼의 금색 술 띠가 열린 상태에서는 자수 띠로 달라짐.
+curtain-open-right.png - 닫힌 커튼의 금색 술 띠가 열린 상태에서는 자수 띠로 달라짐.
+shelf.png - 가로 반복 경계의 질감과 명암이 정확히 일치하지 않음.
+valance.png - 가로 반복 경계의 질감과 명암이 정확히 일치하지 않음.
+rumor-ribbon.png - 가로 반복 경계의 질감과 명암이 정확히 일치하지 않음.
+booths.png - 빈 칸의 가장자리에 문서에 없는 식물 그림자가 추가됨.
+place-card.png - 상단 투명 창 높이가 지정된 340px와 정확히 일치하지 않음.
+mode-opening-idle.png - 그림의 잎과 그림자가 오른쪽 40% 영역을 넘어 왼쪽 글자 영역 일부에 들어감.
+mode-opening-selected.png - 그림의 잎과 그림자가 오른쪽 40% 영역을 넘어 왼쪽 글자 영역 일부에 들어감.
+mode-free-idle.png - 그림의 잎과 그림자가 오른쪽 40% 영역을 넘어 왼쪽 글자 영역 일부에 들어감.
+mode-free-selected.png - 그림의 잎과 그림자가 오른쪽 40% 영역을 넘어 왼쪽 글자 영역 일부에 들어감.
+prologue-frame.png - 모서리 장식이 지정된 9-slice 여백을 넘어감.
+sample-frame.png - 모서리 장식이 지정된 9-slice 여백을 넘어감.
+menu-card-hover.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+menu-card-current.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+medal-hover.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+thumb-active.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+toc-active.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+pin-active.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.
+place-label-active.png - 별도 생성으로 기본 상태와 외곽 및 장식의 픽셀 위치가 완전히 일치하지 않음.

@@ -1,4 +1,4 @@
-# 골목 시술소 V6
+# 골목 시술소 V7
 
 공개 사이트: https://moooncang.github.io/VH/
 
@@ -15,7 +15,9 @@ python -m http.server 8766
   - 파일 끝 V6 블록: 인물 영문 표기(`EN_NAMES`), 초상 속 얼굴 좌표(`FACES`, 썸네일 자르기 기준), 지도 표식 좌표(장소 `x`·`y`, `SHOP_PIN`).
 - `_build/pages.py`: 페이지 구성과 공용 머리·메뉴·바닥글.
 - `_build/site.js`: 동작 원본. 빌드 시 `assets/site.js`로 복사됩니다.
-- `assets/site.css`: 스타일. 색·서체 토큰은 파일 맨 위 `:root`에 있습니다.
+- `assets/site.css`: 스타일. 색·서체 토큰은 파일 맨 위 `:root`, 그림 에셋을 입히는 층은 파일 끝 `SKIN` 구역입니다.
+- `assets/skin/`: 버튼·팻말·종이·액자·커튼 등 UI 그림(WebP). `tools/skin.py`가 `design/incoming/`의 원본 PNG를 잘라 변환합니다. 원본을 바꾸면 `python tools/skin.py` 후 빌드합니다.
+- `design/ui-asset-order.md`: UI 그림 납품요구서(파일명·크기·상태). 다시 주문할 때 이 문서를 씁니다.
 - HTML과 `assets/site.js`는 생성물이므로 원본을 고친 뒤 빌드합니다.
 
 ## 콘텐츠 연결
@@ -26,8 +28,8 @@ python -m http.server 8766
 
 - 인물 코드 A 레이나 / B 네르 / C 세르피나 / D 이브레아 / E 카샤. 첫등장 `AP~EP.webp`(1600×1103), 표정 `{코드}_{번호}.webp`(1600×667, 시술 묶음 1536×1536). 감정 묶음 범위는 `EXPRESSION_GROUPS`.
 - 배경 `images/B/*.webp` 2048×300 파노라마. 도시 페이지 장소 카드와 시작 페이지에 쓰입니다.
-- `assets/art/`: 키 비주얼(title-v5), 조향실(perfumery), 도시 지도(atlas). 모두 1672×941.
-- `assets/ui/icon-*.webp`: `inventory-atlas.webp`에서 잘라낸 방 아이콘 6종(256×256, 투명).
+- `assets/art/`: 키 비주얼(key-visual), 조향실(perfumery), 도시 지도(atlas). 모두 2400×1351, `tools/skin.py`가 생성합니다.
+- 결 지도 좌표(`KNOT_MAP`)는 `assets/skin/body-front.webp`·`body-back.webp` 마네킹 기준 퍼센트, 지도 표식(`PLACES`의 x·y, `SHOP_PIN`)은 `atlas.webp` 기준 퍼센트입니다. 그림을 바꾸면 이 좌표도 맞춰 주세요.
 - 교체 시 같은 파일명과 비율을 유지하세요. 첫등장 그림을 바꾸면 `FACES` 좌표도 맞춰 주세요. 변환 도구는 `tools/convert.py`입니다.
 
 ## 동작
@@ -45,4 +47,4 @@ python tools/check.py
 node --check assets/site.js
 ```
 
-자원 경로, 중복 id, 금지 대시, 서체·아이콘 파일을 검사합니다. 브라우저에서 1440×900, 390×844 전체 페이지와 커튼·메뉴·소문·표정·인물 전환·지도 선택 상태를 확인했습니다.
+자원 경로, 중복 id, 금지 대시, 서체 파일, CSS가 참조하는 모든 그림 파일을 검사합니다. 브라우저에서 1440×900, 390×844 전체 페이지와 커튼·메뉴·소문·표정·인물 전환·지도 선택 상태를 확인했습니다.

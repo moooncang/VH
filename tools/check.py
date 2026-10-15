@@ -26,7 +26,7 @@ for page in pages:
         target=(page.parent/unquote(parsed.path)).resolve()
         if not target.is_file():errors.append(f'{page.name}: missing {ref}')
     if 'https://cdn.' in raw:errors.append(f'External CDN: {page.name}')
-    if 'assets/site.css?v=6' not in raw or 'assets/site.js?v=6' not in raw:errors.append(f'V6 assets missing: {page.name}')
+    if 'assets/site.css?v=7' not in raw or 'assets/site.js?v=7' not in raw:errors.append(f'V7 assets missing: {page.name}')
     ids=re.findall(r'\sid="([^"]+)"',raw)
     dup={x for x in ids if ids.count(x)>1}
     if dup:errors.append(f'Duplicate id {sorted(dup)}: {page.name}')
@@ -41,7 +41,9 @@ for font in ['pretendard/pretendard.css','CormorantGaramond.woff2','GowunBatang-
     if not (ROOT/'assets/fonts'/font).is_file():errors.append('Local font missing: '+font)
 if 'dataset.time' in (ROOT/'assets/guard.js').read_text():errors.append('Time preference still applied by entry guard')
 if errors:raise SystemExit('\n'.join(errors))
-for icon in ['ledger','portrait','bottle','curtain','gate','key']:
-    if not (ROOT/f'assets/ui/icon-{icon}.webp').is_file():errors.append('Icon missing: '+icon)
+css=(ROOT/'assets/site.css').read_text(encoding='utf-8')
+for ref in sorted(set(re.findall(r'url\(([^)"\']+\.(?:webp|png|woff2))\)',css))):
+    if not (ROOT/'assets'/ref).is_file():errors.append('CSS image missing: '+ref)
 if errors:raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(pages)} V6 pages, {len(list((ROOT/"images/CS").glob("*.webp")))} character images, local links/fonts, no time controls or forbidden dashes.')
+skin_refs=len(set(re.findall(r'url\((skin/[^)]+)\)',css)))
+print(f'PASS: {len(pages)} V7 pages, {skin_refs} painted skin files, {len(list((ROOT/"images/CS").glob("*.webp")))} character images, local links/fonts, no forbidden dashes.')
