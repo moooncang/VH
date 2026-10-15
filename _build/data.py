@@ -172,11 +172,11 @@ PLACES=[
 DEPTHS=[('표층','근육에 맺힌 결. 옷 위로 가능'),('혈맥','맨살과 향유. 풀리는 순간 열감과 전율'),('심결','가장 깊은 결. 몸을 완전히 맡겨야 함')]
 MODES=[('opening','개업','개업 첫날. 소지금은 적고 평판은 무명. 레이나만 합류, 나머지는 이후에 만난다'),('free','자유모드','경과일, 소지금, 평판, 아는 인물과 관계를 직접 정한다. 적은 것은 전부 그대로')]
 KNOT_MAP={
- 'reina':{'front':[(31,51,'손목'),(69,51,'손목'),(37,18,'귀끝','sensitive')],'back':[(50,51,'허리')]},
- 'ner':{'front':[(37,17,'귀','sensitive')],'back':[(50,61,'꼬리 뿌리'),(57,68,'꼬리','sensitive')]},
- 'serpina':{'front':[(33,29,'어깨'),(67,29,'어깨'),(44,71,'허벅지')],'back':[(50,51,'허리')]},
- 'ivrea':{'front':[(29,56,'손끝'),(71,56,'손끝'),(50,26,'목'),(50,39,'명치')],'back':[(50,26,'목')]},
- 'kasha':{'front':[(50,26,'목'),(50,58,'골반')],'back':[(50,51,'허리'),(50,26,'목덜미','sensitive')]}}
+ 'reina':{'front':[(24,47,'손목'),(76,47,'손목'),(43,6,'귀끝','sensitive')],'back':[(50,34,'허리')]},
+ 'ner':{'front':[(43,6,'귀','sensitive')],'back':[(50,43,'꼬리 뿌리'),(55,48,'꼬리','sensitive')]},
+ 'serpina':{'front':[(35,20,'어깨'),(65,20,'어깨'),(44,58,'허벅지')],'back':[(50,34,'허리')]},
+ 'ivrea':{'front':[(22,56,'손끝'),(78,56,'손끝'),(50,15,'목'),(50,26,'명치')],'back':[(50,15,'목')]},
+ 'kasha':{'front':[(50,15,'목'),(50,41,'골반')],'back':[(50,34,'허리'),(50,12,'목덜미','sensitive')]}}
 COPY={
  'skip':'본문으로 건너뛰기','enter':'만 19세 이상입니다','age':'성인만 들어올 수 있습니다','entrance':'입구','exit':'입구로 나가기','menu':'방 안내','close':'닫기','sound':'효과음','bell':'접수 벨','rumor':'골목 소문','author':'글 · 설정','today':'오늘의 장부','reservation':'오늘의 예약','no_reservation':'아직 적힌 예약이 없습니다','blank_name':'이름','blank_time':'시간','blank_menu':'메뉴','price_title':'시술 메뉴','menu_note':'메뉴에 없는 시술은 묻지 마세요…','reputation':'골목의 평판','partition':'칸막이 너머','partition_hint':'가만히 귀를 기울여 보세요','partition_touch':'길게 눌러 듣기','rumor_wall':'골목에서 들은 말','staff':'직원','guests':'손님','chart':'카르테 열기','knots':'결이 맺힌 자리','boundary':'첫 허용선','portrait_empty':'등록된 그림 없음','chart_label':'CHART','expressions':'표정 기록','prev':'이전 표정','next':'다음 표정','front':'정면','back':'뒷면','knot_map':'결 지도','sensitive':'예민한 자리','collapse':'무너질 때','stop':'제지할 때','ask':'먼저 요구할 때','jealous':'질투할 때','appearance':'외형','speech':'말투','relations':'관계선','note_title':'레이나의 조향 노트','knots_title':'손으로 푸는 것','knots_definition':'마력을 쓰면 근육과 혈맥에 마력 찌꺼기가 뭉친 매듭이 생긴다. 치유 마법으로는 못 풀고, 손으로 짚어 풀 수 있는 시술사는 거의 없다. 사장은 그 드문 손을 가졌다.','knots_progress':'뻐근함 → 통증 → 감각 과민 → 마력 출력 저하','depth':'결의 깊이','heat':'달아오름','boundary_title':'허용선','relation_title':'관계','oil_shelf':'향유 선반','calm':'진정','warm':'온열','unknown':'라벨이 찢긴 빈 병','unknown_result':'???','calm_effect':'긴장이 내려감','warm_effect':'혈맥이 열림','currency':'금화 1 = 은화 10 = 동화 1,000','treatment_title':'커튼 안쪽','treatment_note':'시술실 두 칸, 얇은 칸막이','treatment_cta':'들어가기','coming':'준비 중','city_note':'자유교역도시 베일하운','city_intro':'심연구 입구 위에 선 도시','from_here':'이곳에서 오는 손님','opening_title':'개업','sample':'크랙 출력 견본','prologue_empty':'프롤로그 미등록','sample_background':'배경 그림','sample_narration':'나레이션','sample_portrait':'인물 그림','sample_dialogue':'대사','sample_status':'정보창','play_guide':'플레이 안내','user_note':'유저노트에 적을 것','shortcuts':'단축어','unwritten':'아직 적히지 않았습니다','crack_cta':'작품으로 들어가기','crack_empty':'작품 링크 준비 중','free_note':'정한 출발 상태는 유저노트에 적어 주세요','day_count':'경과일','money':'소지금','known':'아는 인물과 관계','copy':'출발 상태 복사','copied':'복사했습니다','copy_failed':'아래 내용을 선택해서 복사해 주세요','keyboard':'단축키','keyboard_help':'1~6 방 이동 · M 효과음 · ESC 방 안내 · Enter 접수 벨','expression_help':'← → 표정 · Q / E 인물','city_help':'↑ ↓ 장소','no_age':'만 19세 미만은 입장할 수 없습니다','open':'영업중','storage':'',
 }
@@ -211,7 +211,8 @@ FACES={'reina':(52,16),'ner':(75,22),'serpina':(68,30),'ivrea':(73,32),'kasha':(
 for character in CHARACTERS:
     character['en']=EN_NAMES[character['slug']]
     character['face']=FACES[character['slug']]
-# Pin positions on assets/art/atlas.webp, in percent of the map.
-for place,(x,y) in zip(PLACES,[(50,36),(27,55),(74,13),(83,67),(60,51),(50,84)]):
+# Pin positions on assets/art/atlas.webp, in percent of the map. Knot points above follow the
+# mannequin drawings in assets/skin/body-front.webp and body-back.webp.
+for place,(x,y) in zip(PLACES,[(47,29),(30,55),(81,20),(80,65),(86,47),(47,77)]):
     place['x'],place['y']=x,y
-SHOP_PIN=(36,64)
+SHOP_PIN=(36,61)

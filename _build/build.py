@@ -9,4 +9,4 @@ if __name__=='__main__':
         write_page('char/'+character['slug']+'.html','chart',chart(character),character)
     (ROOT/'assets/site.js').write_text((ROOT/'_build/site.js').read_text(encoding='utf-8-sig'),encoding='utf-8')
     (ROOT/'.nojekyll').touch()
-    print('Built 12 V6 pages.')
+    print('Built 12 V7 pages.')
