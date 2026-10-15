@@ -60,7 +60,7 @@ A long horizontal brass nameplate button, front view, rounded ends with small en
 
 ### A-02 보조 버튼 판 ★
 - 쓰이는 곳: 다음 소문, 커튼 닫기, 골목 소문, 입구로 나가기
-- 파일: `btn-secondary-idle.png` `-hover.png` `-press.png`
+- 파일: `btn-secondary-idle.png` `btn-secondary-hover.png` `btn-secondary-press.png`
 - 크기 600×160. 모서리 여백 좌우 100px, 위아래 32px
 - 모양: 짙은 녹색 가죽 띠에 가는 놋쇠 테. 가운데 비움
 ```
@@ -69,7 +69,7 @@ A slim horizontal button plate of dark forest-green leather with a thin aged bra
 
 ### A-03 둥근 버튼 받침
 - 쓰이는 곳: 이전·다음 화살표, 효과음, 메뉴, 닫기, 그림 확대
-- 파일: `btn-round-idle.png` `-hover.png` `-press.png`
+- 파일: `btn-round-idle.png` `btn-round-hover.png` `btn-round-press.png`
 - 크기 192×192
 ```
 A round brass button boss, front view, dark green enamel center left empty, engraved rim, small highlight at upper left. Transparent background.
@@ -79,7 +79,7 @@ A round brass button boss, front view, dark green enamel center left empty, engr
 - 크기 각 128×128, 투명. 선 굵기 통일, 크림색(#efe3c6) 잉크 선 + 얇은 놋쇠 음영. A-03 받침 위에 얹습니다
 - 파일: `icon-arrow-right.png` `icon-arrow-left.png` `icon-arrow-down.png` `icon-close.png` `icon-zoom.png` `icon-sound-on.png` `icon-sound-off.png` `icon-menu.png` `icon-bell.png` `icon-copy.png` `icon-check.png` `icon-plus.png`
 ```
-A single small hand-inked icon of [대상], cream ink lines with thin brass shading, centered, consistent stroke weight across the set. Transparent background.
+A single small hand-inked icon of [SUBJECT: e.g. a right arrow], cream ink lines with thin brass shading, centered, consistent stroke weight across the set. Transparent background.
 ```
 
 ### A-05 칩·탭 ★
@@ -261,7 +261,7 @@ Painted brass shop-sign lettering reading exactly "Veilhaun", elegant classic se
 
 ### G-02 결 진행 카드 4단
 - 쓰이는 곳: 뻐근함 → 통증 → 감각 과민 → 마력 출력 저하
-- 파일: `progress-1.png` ~ `progress-4.png` 520×200
+- 파일: `progress-1.png` `progress-2.png` `progress-3.png` `progress-4.png` 520×200
 - 모양: 같은 카드 4장, 단계마다 붉은 기운이 조금씩 짙어짐. 카드 사이 화살표는 사이트가 그림
 
 ### G-03 결의 깊이 지층 (불투명)
