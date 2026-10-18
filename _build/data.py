@@ -5,7 +5,6 @@ CONFIG = {'SHOP_NAME': '골목 시술소',
  'AUTHOR': '문창놈',
  'MASA_URL': 'masa/index.html',
  'CRACK_URL': '',
- 'BGM': '',
  'BACKGROUND_DIR': 'images/B',
  'CHARACTER_DIR': 'images/CS',
  'INTERACTION_DIR': 'images/I',
@@ -216,3 +215,13 @@ for character in CHARACTERS:
 for place,(x,y) in zip(PLACES,[(47,29),(30,55),(81,20),(80,65),(86,47),(47,77)]):
     place['x'],place['y']=x,y
 SHOP_PIN=(36,61)
+
+# Original soundtrack. Each room plays its own track; 'pages' lists the pages that use it as BGM.
+# Files live in assets/ost/<file>.mp3 and the cover art in assets/ost/<file>.webp (1920x1080).
+OST = [
+    {'file': 'untie-me', 'ko': '메인', 'en': 'Untie Me', 'length': '4:17', 'room': '인물 · 베일하운 · 시작',
+     'pages': ['characters', 'chart', 'city', 'start']},
+    {'file': 'opening', 'ko': '가게 오픈', 'en': 'Morning in the Back Alley', 'length': '2:43', 'room': '가게', 'pages': ['home']},
+    {'file': 'perfumery', 'ko': '향유실', 'en': 'Perfumery Afternoon', 'length': '3:13', 'room': '시술 안내', 'pages': ['rules']},
+    {'file': 'treatment', 'ko': '시술실', 'en': 'Steam and Sheet Rustle', 'length': '3:33', 'room': '시술실', 'pages': ['treatment']},
+]

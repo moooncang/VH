@@ -25,11 +25,40 @@ const hero=$('main img[fetchpriority="high"]');
 Promise.race([Promise.all([document.fonts?document.fonts.ready:null,hero?settle(hero):null]),wait(1600)]).then(()=>requestAnimationFrame(()=>requestAnimationFrame(reveal)));
 addEventListener('pageshow',ev=>{document.body.classList.remove('leaving');if(ev.persisted)reveal();});
 
-/* ---------- sound: synthesized bell and soft clicks, only after a user gesture */
-let sound=read('vh-sound','on')==='on',ctx,unlocked=false,bgm;
-function unlock(){if(unlocked)return;unlocked=true;if(D.config.BGM&&!bgm){bgm=new Audio(D.prefix+D.config.BGM);bgm.loop=true;bgm.volume=0;if(sound)fadeBgm(true);}}
-function fadeBgm(on){if(!bgm)return;if(on)bgm.play().catch(()=>{});const from=bgm.volume,to=on?.18:0,t0=performance.now();const step=t=>{const k=Math.min((t-t0)/900,1);bgm.volume=from+(to-from)*k;if(k<1)requestAnimationFrame(step);else if(!on)bgm.pause();};requestAnimationFrame(step);}
+/* ---------- music: each room has its own track; position carries across pages, every change fades */
+const SS={get(k){try{return JSON.parse(sessionStorage.getItem(k)||'null');}catch{return null;}},set(k,v){try{sessionStorage.setItem(k,JSON.stringify(v));}catch{}}};
+const OST=D.ost||[],VOL=.32;
+let sound=read('vh-sound','on')==='on',ctx,unlocked=false,pinned=SS.get('vh-pin'),track=null,audio=null,blocked=false;
+const roomTrack=()=>OST.find(t=>t.pages.includes(D.page))||null;
+const wantTrack=()=>OST.find(t=>t.file===pinned)||roomTrack();
+function fadeTo(a,to,ms,done){cancelAnimationFrame(a._fade);const from=a.volume,t0=performance.now();const step=t=>{const k=Math.min((t-t0)/ms,1);a.volume=Math.max(0,Math.min(1,from+(to-from)*k));if(k<1)a._fade=requestAnimationFrame(step);else done?.();};a._fade=requestAnimationFrame(step);}
+function savePos(){if(audio&&track)SS.set('vh-music',{file:track.file,t:audio.currentTime});}
+function setTrack(t){
+  if(t&&track===t&&audio){playMusic();return;}
+  const old=audio;if(old){savePos();fadeTo(old,0,700,()=>{old.pause();old.removeAttribute('src');old.load();});}
+  track=t;audio=null;if(!t){updateMusicUi();return;}
+  const a=new Audio();a.loop=true;a.preload='auto';a.volume=0;a.src=D.prefix+'assets/ost/'+t.file+'.mp3';
+  const saved=SS.get('vh-music');
+  if(saved&&saved.file===t.file&&saved.t>0){try{a.currentTime=saved.t;}catch{}a.addEventListener('loadedmetadata',()=>{if(a.currentTime<1&&saved.t<a.duration)try{a.currentTime=saved.t;}catch{}},{once:true});}
+  a.addEventListener('timeupdate',musicProgress);a.addEventListener('play',updateMusicUi);a.addEventListener('pause',updateMusicUi);
+  audio=a;playMusic();
+}
+function playMusic(){
+  if(!audio||!sound||document.hidden){updateMusicUi();return;}
+  const a=audio;a.play().then(()=>{blocked=false;fadeTo(a,VOL,1400);}).catch(()=>{blocked=true;});updateMusicUi();
+}
+function stopMusic(ms=700){if(!audio)return;savePos();const a=audio;fadeTo(a,0,ms,()=>a.pause());}
+function musicProgress(){if(!audio||!track)return;const card=$(`.ost-card[data-track="${track.file}"] .ost-bar i`);if(card&&audio.duration)card.style.width=(audio.currentTime/audio.duration*100).toFixed(2)+'%';}
+function updateMusicUi(){
+  const on=!!(audio&&!audio.paused&&sound);
+  document.body.classList.toggle('music-on',on);
+  $$('.ost-card').forEach(c=>{const hit=on&&track&&c.dataset.track===track.file;c.classList.toggle('playing',!!hit);$('.ost-play',c).setAttribute('aria-pressed',String(!!hit));});
+  const np=$('#now-playing');if(np){np.hidden=!on;if(track)$('.np-title',np).textContent=track.en;np.title=track?track.ko+' · '+track.en:'';}
+  const auto=$('#ost-auto');if(auto)auto.hidden=!pinned;
+}
+function unlock(){if(unlocked)return;unlocked=true;if(blocked)playMusic();}
 document.addEventListener('pointerdown',unlock,{once:true});document.addEventListener('keydown',unlock,{once:true});
+addEventListener('pagehide',savePos);
 function sfx(kind='tick'){
   if(!sound||!unlocked||document.hidden)return;
   try{
@@ -42,9 +71,19 @@ function sfx(kind='tick'){
   }catch{}
 }
 const soundBtn=$('#sound');
-function updateSound(){if(soundBtn){soundBtn.setAttribute('aria-pressed',String(sound));soundBtn.setAttribute('aria-label',sound?'효과음 켜짐':'효과음 꺼짐');}save('vh-sound',sound?'on':'off');fadeBgm(sound);}
-soundBtn?.addEventListener('click',()=>{sound=!sound;updateSound();sfx('glass');});
-if(soundBtn){soundBtn.setAttribute('aria-pressed',String(sound));}
+function updateSound(){if(soundBtn){soundBtn.setAttribute('aria-pressed',String(sound));soundBtn.setAttribute('aria-label',sound?'소리 켜짐':'소리 꺼짐');}save('vh-sound',sound?'on':'off');if(sound)playMusic();else stopMusic();updateMusicUi();}
+soundBtn?.addEventListener('click',()=>{sound=!sound;unlocked=true;updateSound();sfx('glass');});
+if(soundBtn){soundBtn.setAttribute('aria-pressed',String(sound));soundBtn.setAttribute('aria-label',sound?'소리 켜짐':'소리 꺼짐');}
+setTrack(wantTrack());
+/* soundtrack cards: pick a track to keep it playing in every room; pick it again to stop */
+$$('.ost-card').forEach(card=>$('.ost-play',card).addEventListener('click',()=>{
+  const t=OST.find(x=>x.file===card.dataset.track);
+  if(card.classList.contains('playing')){sound=false;updateSound();return;}
+  pinned=t.file;SS.set('vh-pin',pinned);sound=true;unlocked=true;
+  if(track!==t)SS.set('vh-music',null);
+  setTrack(t);updateSound();
+}));
+$('#ost-auto')?.addEventListener('click',()=>{pinned=null;SS.set('vh-pin',null);setTrack(roomTrack());updateMusicUi();});
 
 /* ---------- header state */
 const hdr=$('.hdr');if(hdr){let raf=0;const onScroll=()=>{if(raf)return;raf=requestAnimationFrame(()=>{hdr.classList.toggle('scrolled',scrollY>24);raf=0;});};onScroll();addEventListener('scroll',onScroll,{passive:true});}
@@ -72,7 +111,7 @@ $$('dialog').forEach(d=>{
 /* ---------- page transitions: fade to the same dark, then the next page fades up */
 function navigate(url){
   if(reduced.matches){location.href=url;return;}
-  document.body.classList.add('leaving');
+  document.body.classList.add('leaving');stopMusic(380);
   const d=$('dialog[open]');if(d)closeModal(d);
   setTimeout(()=>location.href=url,440);
 }
@@ -297,5 +336,5 @@ if(canvas){const c2=canvas.getContext('2d');let w=0,h=0,frame=0,last=0,alpha=0;c
   const resume=()=>{if(!document.hidden&&!reduced.matches&&!frame){last=performance.now();frame=requestAnimationFrame(draw);}};
   resize();addEventListener('resize',resize,{passive:true});document.addEventListener('visibilitychange',resume);resume();}
 
-document.addEventListener('visibilitychange',()=>{document.body.classList.toggle('page-hidden',document.hidden);if(bgm){if(document.hidden)bgm.pause();else if(sound&&unlocked)bgm.play().catch(()=>{});}});
+document.addEventListener('visibilitychange',()=>{document.body.classList.toggle('page-hidden',document.hidden);if(document.hidden){if(audio){savePos();audio.pause();}}else playMusic();});
 })();
