@@ -1,0 +1,167 @@
+{
+ "source": "riana.psd",
+ "width": 1024,
+ "height": 1024,
+ "layers": [
+  {
+   "name": "back hair",
+   "file": "00-back-hair-e138d167.png",
+   "left": 242,
+   "top": 158,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "neck",
+   "file": "01-neck-857c7837.png",
+   "left": 425,
+   "top": 346,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "ears-r",
+   "file": "02-ears-r-89cebc4a.png",
+   "left": 306,
+   "top": 381,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "handwear-r",
+   "file": "03-handwear-r-a246bbb0.png",
+   "left": 96,
+   "top": 468,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "ears-l",
+   "file": "04-ears-l-1274e963.png",
+   "left": 514,
+   "top": 267,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "tail",
+   "file": "05-tail-0d3cde82.png",
+   "left": 311,
+   "top": 488,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "handwear-l",
+   "file": "06-handwear-l-56be8e87.png",
+   "left": 587,
+   "top": 414,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "face",
+   "file": "07-face-39da8896.png",
+   "left": 318,
+   "top": 166,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "nose",
+   "file": "08-nose-65c41d24.png",
+   "left": 420,
+   "top": 339,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyebrow-l",
+   "file": "09-eyebrow-l-f3ea6412.png",
+   "left": 407,
+   "top": 269,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "mouth",
+   "file": "10-mouth-cdbcb0ea.png",
+   "left": 435,
+   "top": 388,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "topwear",
+   "file": "11-topwear-5c7d9ed7.png",
+   "left": 178,
+   "top": 421,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyebrow-r",
+   "file": "12-eyebrow-r-11840dfe.png",
+   "left": 334,
+   "top": 301,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyelash-r",
+   "file": "13-eyelash-r-a0f38530.png",
+   "left": 335,
+   "top": 336,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyelash-l",
+   "file": "14-eyelash-l-336a622f.png",
+   "left": 437,
+   "top": 290,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyewhite-r",
+   "file": "15-eyewhite-r-ac4f1259.png",
+   "left": 353,
+   "top": 341,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "eyewhite-l",
+   "file": "16-eyewhite-l-c3daff58.png",
+   "left": 440,
+   "top": 294,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "irides-r",
+   "file": "17-irides-r-7a4b20ce.png",
+   "left": 367,
+   "top": 343,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "irides-l",
+   "file": "18-irides-l-4d4da341.png",
+   "left": 450,
+   "top": 300,
+   "opacity": 1,
+   "hidden": false
+  },
+  {
+   "name": "front hair",
+   "file": "19-front-hair-9a0cf853.png",
+   "left": 279,
+   "top": 158,
+   "opacity": 1,
+   "hidden": false
+  }
+ ]
+}
