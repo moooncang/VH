@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <title>게이지 눈금 — 보석</title>
+  <path d="m12 3 6 9-6 9-6-9Z" fill="#22161f" stroke="#ffd27a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="m12 7 3.5 5-3.5 5-3.5-5Z" fill="#c3aebb"/>
+  <path d="m12 7 3.5 5H12Z" fill="#f6eef2"/>
+  <path d="M12 12v5l-3.5-5Z" fill="#f4a6c2"/>
+</svg>

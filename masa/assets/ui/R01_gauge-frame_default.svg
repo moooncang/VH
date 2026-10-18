@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="40" viewBox="0 0 400 40" fill="none">
+  <title>레이나의 스파 — 게이지 프레임</title>
+  <desc>Display at 200 by 20. Transparent fill aperture x16 y10 width368 height20. Nine-slice: 10 20 10 20 source pixels.</desc>
+  <path d="M20 6H380Q390 6 390 16V24Q390 34 380 34H20Q10 34 10 24V16Q10 6 20 6Z" stroke="#47303f" stroke-width="2"/>
+  <rect x="15" y="9" width="370" height="22" rx="11" stroke="#ffd27a" stroke-opacity=".78" stroke-width="2"/>
+  <path d="M10 12 3 20 10 28M390 12 397 20 390 28" stroke="#ffd27a" stroke-opacity=".78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m10 16 4 4-4 4-4-4Zm380 0 4 4-4 4-4-4Z" fill="#f4a6c2" stroke="#ffd27a" stroke-width="1"/>
+</svg>
