@@ -147,6 +147,22 @@ def home():
 <section class="partition wrap reveal">
 {chapter('02', 'Behind the Partition', d.COPY['partition'])}
 <button class="partition-panel" id="partition" type="button" aria-describedby="voice-hint"><span class="partition-glass"></span><span class="partition-shadow" aria-hidden="true"></span><span class="partition-voice" id="voice" aria-live="polite"></span><span class="partition-hint" id="voice-hint">{e(d.COPY['partition_hint'])} · 누를 때마다 다른 소리</span></button>
+</section>
+{soundtrack()}'''
+
+
+def soundtrack():
+    cards = ''.join(
+        f'<li class="ost-card reveal" data-track="{t["file"]}"><button type="button" class="ost-play" aria-pressed="false" aria-label="{e(t["ko"])} · {e(t["en"])} 재생">'
+        f'<span class="ost-cover">{img("assets/ost/" + t["file"] + ".webp", e(t["ko"]) + " 사운드트랙 그림")}<span class="ost-state" aria-hidden="true"><i></i><i></i><i></i></span></span>'
+        f'<span class="ost-meta"><span class="ost-num">{n2(i)}</span><strong class="ost-en">{e(t["en"])}</strong><span class="ost-ko">{e(t["ko"])}<small>{e(t["room"])}에서 흐름 · {t["length"]}</small></span></span></button>'
+        f'<span class="ost-bar" aria-hidden="true"><i></i></span></li>'
+        for i, t in enumerate(d.OST, 1))
+    return f'''<section class="ost wrap" id="ost">
+{chapter('03', 'Soundtrack', '오리지널 사운드트랙')}
+<p class="ost-lede">방마다 다른 곡이 흐릅니다. 곡을 누르면 그 곡으로 고정되고, 다시 누르면 멈춥니다.</p>
+<ol class="ost-list">{cards}</ol>
+<p class="ost-foot"><button type="button" class="btn" id="ost-auto" hidden><span>방마다 바뀌는 음악으로</span></button></p>
 </section>'''
 
 
@@ -386,7 +402,8 @@ def write_page(filename, page, body, char=None):
                  if (ROOT / f"{d.CONFIG['CHARACTER_DIR']}/{c['code']}_{n}.webp").is_file()]
                 for g in d.EXPRESSION_GROUPS[1:]]
         chars.append(item)
-    payload = dict(config={k: d.CONFIG[k] for k in ('BGM', 'PROLOGUES', 'BACKGROUND_DIR')}, characters=chars, rumors=d.RUMORS,
+    ost = [{k: t[k] for k in ('file', 'ko', 'en', 'pages')} for t in d.OST]
+    payload = dict(config={k: d.CONFIG[k] for k in ('PROLOGUES', 'BACKGROUND_DIR')}, ost=ost, characters=chars, rumors=d.RUMORS,
                    voices=d.VOICES, places=d.PLACES, expressions=d.EXPRESSIONS, heat=d.HEAT,
                    copy={k: d.COPY[k] for k in ('calm', 'warm', 'unknown', 'calm_effect', 'warm_effect', 'unknown_result', 'prologue_empty', 'copied', 'copy_failed', 'variant_empty', 'sensitive', 'from_here')},
                    knots=d.KNOT_MAP, page=page, character=char['slug'] if char else None, prefix=prefix)
@@ -401,10 +418,10 @@ def write_page(filename, page, body, char=None):
     accent = f' style="--c:{char["color"]}"' if char else ''
     header = '' if page == 'index' else f'''<header class="hdr"><a class="mark" href="{prefix}home.html"><img class="mark-logo" src="{prefix}assets/skin/logo-small.webp" alt="Veilhaun"><span class="mark-ko">{e(d.CONFIG['SHOP_NAME'])}</span></a>
 <nav class="hdr-nav" aria-label="주 메뉴">{nav}</nav>
-<div class="hdr-tools">{rbtn('sound', '효과음', 'id="sound" aria-pressed="false"')}{rbtn('menu', '방 안내', 'id="menu-open" aria-haspopup="dialog"')}</div></header>'''
+<div class="hdr-tools"><a class="now-playing" id="now-playing" href="{prefix}home.html#ost" hidden><span class="np-eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="np-title"></span></a>{rbtn('sound', '소리', 'id="sound" aria-pressed="false"')}{rbtn('menu', '방 안내', 'id="menu-open" aria-haspopup="dialog"')}</div></header>'''
     footer = '' if page == 'index' else f'''<footer class="ftr wrap"><div class="ftr-brand"><img class="mark-logo" src="{prefix}assets/skin/logo-small.webp" alt="Veilhaun"><span>{e(d.CONFIG['TITLE'])} · 글 · 설정 {e(d.CONFIG['AUTHOR'])}</span></div>
 <div class="ftr-tools"><button id="bell" class="btn" type="button"><span>{e(d.COPY['rumor'])}</span><i class="bell-icon" aria-hidden="true"></i></button><a class="btn" href="{prefix}index.html" data-exit><span>{e(d.COPY['exit'])}</span></a></div>
-<p class="ftr-keys">{e(d.COPY['keyboard'])} · 1~6 방 이동 · M 효과음 · ESC 방 안내</p></footer>'''
+<p class="ftr-keys">{e(d.COPY['keyboard'])} · 1~6 방 이동 · M 소리 켜고 끄기 · ESC 방 안내</p></footer>'''
     html = f'''<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0d0f0c"><meta name="description" content="{e(d.CONFIG['TITLE'])}. 베일하운 뒷골목 가게의 인물과 시술, 도시를 둘러보세요."><meta name="robots" content="noindex"><title>{e(label)} · {e(d.CONFIG['SHOP_NAME'])}</title><script>document.documentElement.classList.add('js')</script>{guard}<link rel="icon" href="{prefix}assets/favicon.svg"><link rel="preload" href="{prefix}assets/fonts/CormorantGaramond.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="{prefix}assets/fonts/GowunBatang-Bold.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="{prefix}assets/fonts/pretendard/pretendard.css"><link rel="stylesheet" href="{prefix}assets/site.css?v={VERSION}"><script id="site-data" type="application/json">{json.dumps(payload, ensure_ascii=False).replace('</', '<\\/')}</script><script defer src="{prefix}assets/site.js?v={VERSION}"></script></head>
 <body class="page-{page}"{accent}><a href="#main" class="skip-link">{e(d.COPY['skip'])}</a>{header}<main id="main">{body}</main>{footer}
 <dialog id="directory" class="directory" aria-label="방 안내"><form method="dialog"><button class="rb rb-close close" aria-label="{e(d.COPY['close'])}"></button></form><div class="dir-head"><img class="dir-logo" src="{prefix}assets/skin/logo.webp" alt="Veilhaun"><span>{e(d.CONFIG['SHOP_NAME'])} · 방 안내</span></div><nav class="dir-nav">{directory}</nav><p class="dir-foot">글 · 설정 {e(d.CONFIG['AUTHOR'])}</p></dialog>

@@ -20,13 +20,17 @@ python -m http.server 8766
 - `design/ui-asset-order.md`: UI 그림 납품요구서(파일명·크기·상태). 다시 주문할 때 이 문서를 씁니다.
 - HTML과 `assets/site.js`는 생성물이므로 원본을 고친 뒤 빌드합니다.
 
+## 사운드트랙 (assets/ost/)
+
+곡 목록과 방 배정은 `_build/data.py`의 `OST`입니다. 가게 = Morning in the Back Alley, 시술 안내 = Perfumery Afternoon, 시술실 = Steam and Sheet Rustle, 인물·카르테·베일하운·시작 = Untie Me. 입구 화면은 조용합니다. 같은 곡이 이어지는 방끼리는 이어서 재생하고, 곡이 바뀔 때는 서서히 줄였다 키웁니다. 가게 페이지 Soundtrack에서 곡을 누르면 모든 방에서 그 곡으로 고정되고, "방마다 바뀌는 음악으로"로 되돌립니다. 머리의 스피커 버튼(M 키)이 음악과 효과음을 함께 켜고 끕니다. 곡을 추가하려면 `<이름>.mp3`와 표지 `<이름>.webp`(16:9)를 넣고 `OST`에 한 줄 추가합니다.
+
 ## 시술 체험 (masa/)
 
 `masa/`는 별도로 만든 레이나 마사지 체험(PixiJS)입니다. 시술실 페이지에서 커튼을 열면 나오는 "시술 체험하기"(`CONFIG.MASA_URL`)로 들어갑니다. 빌드 스크립트가 만들지 않는 독립 페이지라 `masa/index.html`을 직접 수정합니다. 사이트 연동으로 바꾼 곳은 세 군데입니다: 성인 확인(`../assets/guard.js`), 오른쪽 위 시술실 복귀 버튼(`#leave`), 결과 화면 "시술실로" 버튼(`#resultLeave`). 글꼴은 Google Fonts에서 불러옵니다.
 
 ## 콘텐츠 연결
 
-`CONFIG.CRACK_URL`(작품으로 들어가기), `CONFIG.BGM`(배경음 파일 경로), `CONFIG.PROLOGUES`, `CONFIG.RESERVATIONS`는 아직 빈 값입니다. 채우면 해당 자리가 자동으로 활성화되고, 비어 있는 동안은 "준비 중"으로 표시됩니다.
+`CONFIG.CRACK_URL`(작품으로 들어가기), `CONFIG.PROLOGUES`, `CONFIG.RESERVATIONS`는 아직 빈 값입니다. 채우면 해당 자리가 자동으로 활성화되고, 비어 있는 동안은 "준비 중"으로 표시됩니다.
 
 ## 그림
 
