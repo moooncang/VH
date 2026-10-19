@@ -37,7 +37,7 @@ function setTrack(t){
   if(t&&track===t&&audio){playMusic();return;}
   const old=audio;if(old){savePos();fadeTo(old,0,700,()=>{old.pause();old.removeAttribute('src');old.load();});}
   track=t;audio=null;if(!t){updateMusicUi();return;}
-  const a=new Audio();a.loop=true;a.preload='auto';a.volume=0;a.src=D.prefix+'assets/ost/'+t.file+'.mp3';
+  const a=new Audio();a.loop=true;a.preload='none';a.volume=0;a._src=D.prefix+'assets/ost/'+t.file+'.mp3';
   const saved=SS.get('vh-music');
   if(saved&&saved.file===t.file&&saved.t>0){try{a.currentTime=saved.t;}catch{}a.addEventListener('loadedmetadata',()=>{if(a.currentTime<1&&saved.t<a.duration)try{a.currentTime=saved.t;}catch{}},{once:true});}
   a.addEventListener('timeupdate',musicProgress);a.addEventListener('play',updateMusicUi);a.addEventListener('pause',updateMusicUi);
@@ -45,7 +45,7 @@ function setTrack(t){
 }
 function playMusic(){
   if(!audio||!sound||document.hidden){updateMusicUi();return;}
-  const a=audio;a.play().then(()=>{blocked=false;fadeTo(a,VOL,1400);}).catch(()=>{blocked=true;});updateMusicUi();
+  const a=audio;if(!a.src)a.src=a._src;a.play().then(()=>{blocked=false;fadeTo(a,VOL,1400);}).catch(()=>{blocked=true;});updateMusicUi();
 }
 function stopMusic(ms=700){if(!audio)return;savePos();const a=audio;fadeTo(a,0,ms,()=>a.pause());}
 function musicProgress(){if(!audio||!track)return;const card=$(`.ost-card[data-track="${track.file}"] .ost-bar i`);if(card&&audio.duration)card.style.width=(audio.currentTime/audio.duration*100).toFixed(2)+'%';}
