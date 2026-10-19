@@ -50,6 +50,8 @@ python -m http.server 8766
 
 ## 검증
 
+글자 잘림·겹침·크기·대비는 `tools/text-audit/`로 전 페이지를 6가지 폭에서 검사합니다(사용법은 그 폴더의 README).
+
 ```sh
 python tools/check.py
 node --check assets/site.js

@@ -237,7 +237,7 @@ def chart(ch):
     karte_rows = ''.join(f'<div class="k-cell k-r{n}"><dt>{e(a)}</dt><dd>{e(b)}</dd></div>' for n, (a, b) in enumerate(rows, 1))
     group_en = 'Staff' if ch['group'] == '직원' else 'Guest'
     pager = ''.join(
-        f'<a class="pager-card {side}" href="{c["slug"]}.html" style="--c:{c["color"]}"><span class="pager-thumb">{img("../" + c["portrait"], "", "", False, face(c))}</span>'
+        f'<a class="pager-card {side}" href="{c["slug"]}.html" style="--c:{c["color"]}" aria-label="{"이전" if side == "prev" else "다음"} 인물 · {e(c["name"])}"><span class="pager-thumb">{img("../" + c["portrait"], "", "", False, face(c))}</span>'
         f'<span class="pager-text"><small>{label}</small><strong>{e(c["en"])}</strong><span>{e(c["name"])}</span></span></a>'
         for side, label, c in [('prev', 'Previous', prev_c), ('next', 'Next', next_c)])
     return f'''<section class="chart-hero">
@@ -341,11 +341,11 @@ def city():
     return f'''<section class="city-head wrap">{title('Veilhaun', e(d.COPY['city_note']) + ' · ' + e(d.COPY['city_intro']), 'Free Trade City')}</section>
 <section class="city wrap">
 <div class="map"><div class="map-scroll"><div class="map-canvas">{img('assets/art/atlas.webp', '베일하운 지도', 'map-img', True)}{pins}{shop}</div></div><p class="map-hint">지도의 표식을 눌러 장소를 고르세요.</p></div>
-<aside class="place-card" aria-live="polite">
+<div class="place-col"><aside class="place-card" aria-live="polite">
 <div class="place-strip">{img(d.CONFIG['BACKGROUND_DIR'] + '/' + p['code'] + '.webp', p['name'], 'place-img', True)}</div>
-<div class="place-body"><p class="kicker"><span id="place-number">01</span> / {n2(len(d.PLACES))}</p><h2 id="place-name">{e(p['name'])}</h2><p id="place-text">{e(p['text'])}</p><div id="place-guest"></div>
+<div class="place-body"><p class="kicker"><span id="place-number">01</span> / {n2(len(d.PLACES))}</p><h2 id="place-name">{e(p['name'])}</h2><p id="place-text">{e(p['text'])}</p>
 <div class="stepper">{rbtn('prev', '이전 장소', 'data-place-step="-1"')}{rbtn('next', '다음 장소', 'data-place-step="1"')}</div></div>
-</aside>
+</aside><div id="place-guest" aria-live="polite"></div></div>
 </section>
 <nav class="place-index wrap" aria-label="도시 장소">{places}</nav>'''
 
@@ -412,7 +412,7 @@ def write_page(filename, page, body, char=None):
         f'<a href="{prefix}{slug}.html"{" aria-current=page" if current == slug else ""}><span class="n">{n2(i)}</span>{ko}</a>'
         for i, (slug, ko, en, ic) in enumerate(ROOMS, 1))
     directory = ''.join(
-        f'<a href="{prefix}{slug}.html"{" aria-current=page" if current == slug else ""}><span class="dir-icon">{img(prefix + "assets/skin/room-" + ic + ".webp")}</span><span class="dir-n">{n2(i)}</span><strong>{en}</strong><span class="dir-ko">{ko}</span></a>'
+        f'<a href="{prefix}{slug}.html"{" aria-current=page" if current == slug else ""}><span class="dir-icon">{img(prefix + "assets/skin/room-" + ic + ".webp")}</span><strong>{en}</strong><span class="dir-ko">{ko}</span></a>'
         for i, (slug, ko, en, ic) in enumerate(ROOMS, 1))
     guard = '' if page == 'index' else f'<script src="{prefix}assets/guard.js?v={VERSION}"></script>'
     accent = f' style="--c:{char["color"]}"' if char else ''
